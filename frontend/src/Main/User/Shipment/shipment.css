@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap");
+
+.shipment {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  flex-direction: column;
+ 
+}
+.shipment-container {
+ margin: 0;
+ padding: 0;
+ position: relative;
+}
+
+
+.shipment-container .text {
+ font-family: "Space Grotesk", system-ui, Helvetica, Arial, sans-serif;
+ font-weight: 500;
+ font-size: 40px;
+ text-align: center;
+ padding-bottom: 30px;
+ color: #003fde;
+ text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+.shipment-container .header {
+ font-family: "Space Grotesk", system-ui, Helvetica, Arial, sans-serif;
+ font-weight: 500;
+ font-size: 30px;
+ text-align: center;
+ padding-bottom: 30px;
+ padding-left: 0px;
+ margin-top: 100px;
+ color: black;
+ text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+.shipment-input-wrapper input {
+ padding: 15px;
+ padding-left: 50px;
+ width: 300px;
+ height: 30px;
+ background-color: #F5F9FE;
+ border: none;
+ border-radius: 15px;
+ font-size: 13.5px;
+ font-family: "Poppins", system-ui, Helvetica, Arial, sans-serif;
+}
+
+
+.shipment-input-wrapper .input {
+ margin-bottom: 0px;
+ position: relative;
+ height: 100%;
+ width: 100%;
+}
+
+
+.shipment-input-wrapper .input .search {
+ position: absolute;
+ left: 15px;
+ top: 50.5%;
+ font-size: 19px;
+ color: rgb(78, 78, 78);
+ transform: translateY(-50%);
+ pointer-events: none;
+}
+
+
+
+
+.shipment-container .menu {
+ display: flex;
+ align-items: center;
+ justify-content: space-around; /* Evenly spaces icons within the full width */
+ font-size: 28px;
+ color: rgb(78, 78, 78);
+ gap: 10px;
+ padding: 20px;
+ text-decoration: none;
+ position: fixed;
+ bottom: 0%;
+ height: 30px;
+ padding-bottom: 40px;
+ left: 0;  /* Ensures the menu starts from the left edge */
+ right: 0; /* Ensures the menu extends to the right edge */
+ background-color: white;
+ }
+
+
+.shipment-container .menu a {
+ color: inherit; /* Ensures icons keep the color from .menu */
+ text-decoration: none; /* Removes any underline from the link */
+}
+
+.scrollable-card-list {
+  max-height: 400px; /* Adjust height as needed */
+  overflow-y: auto;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 10px; /* Optional: Add padding for better spacing */
+  border-radius: 8px; /* Optional: Add rounded corners */
+  margin-top: 10px;
+}
+
+.bi-box2 {
+  -webkit-text-stroke: 0.4px;
+}
+
+.filter-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #ffffff; /* Light background */
+  margin-bottom: 30px;
+  gap: 20px;
+}
+
+.filter-button {
+  border: none;
+  padding: 8px 16px;
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s ease, color 0.3s ease;
+}
+
+
+.filter-button.active {
+  text-decoration: underline;
+  color: black;
+  border-radius: 5px;
+}
+
+
+/* Style for the unsuccessful icon */
+.unsuccessful-icon {
+  color: red; /* Color to indicate an error or failure */
+  font-size: 20px; /* Adjust size as needed */
+}
+
+.bi-person {
+  font-size: 34px;
+}
+
+
+
+
+
+
+

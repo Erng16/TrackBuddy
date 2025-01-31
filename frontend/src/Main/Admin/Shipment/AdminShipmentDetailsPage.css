@@ -1,0 +1,330 @@
+
+.admin-shipment-detail {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.admin-shipment-detail .shipment-details-container {
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+  width: 350px;
+}
+
+.admin-shipment-detail .shipment-details-container .text {
+  margin-left: 8px;
+  padding-bottom: 30px;
+  padding-left: 0px;
+  margin-top: 100px;
+  color: black;
+  text-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0px;
+  text-align: left;
+}
+.admin-shipment-detail .text p {
+  font-family: "Poppins", system-ui, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+.admin-shipment-detail .text .trackNum {
+  font-family: "Poppins", system-ui, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.admin-shipment-detail .return-button {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: absolute;
+  left: 40px;
+  top: 8%;
+  font-size: 28px;
+  color: rgb(78, 78, 78);
+  transform: translateY(-50%);
+}
+
+.admin-shipment-detail .return-button:hover {
+  color: #0056b3;
+}
+
+.admin-shipment-detail .return-button i {
+  margin-top: 50px;
+  margin-right: 5px;
+  -webkit-text-stroke: 0.5px;
+  font-size: 28px;
+}
+
+/* Container for the timeline to make it scrollable */
+.admin-shipment-detail .timeline-container {
+  max-height: 200px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: none;
+  margin-bottom: 10px;
+}
+
+.admin-shipment-detail .timeline-container::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+.admin-shipment-detail .dis-info * {
+  margin-bottom: 5px;
+}
+
+.admin-shipment-detail .dis-info p {
+  font-size: 14px;
+}
+
+.admin-shipment-detail .dis-info input {
+  padding: 15px;
+  padding-left: 20px;
+  width: 70%;
+  height: 15px;
+  background-color: rgb(235, 240, 244);
+  color: rgb(78, 78, 78);
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  font-family: "Poppins", system-ui, Helvetica, Arial, sans-serif;
+}
+
+.admin-shipment-detail .dis-info .input-wrapper {
+  display: flex;
+  width: 70vw;
+}
+
+.admin-shipment-detail .dis-info .input-wrapper .input {
+  margin-bottom: 0px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.admin-shipment-detail .date-time-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.admin-shipment-detail .date-input,
+.time-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+
+.time-input {
+  position: relative;
+}
+
+.dis-info span {
+  position: absolute;
+  left: 50%;
+}
+
+.report-checkbox-wrapper {
+  margin-top: 0px;
+  display: flex;
+  width: 70vw;
+  margin-bottom: 0px;
+}
+
+.report-checkbox-wrapper label {
+  margin-top: 0px;
+  display: flex;
+  font-size: 14px;
+}
+
+.report-checkbox {
+  margin-right: 5px;
+}
+
+.note-wrapper {
+  box-sizing: border-box;
+}
+.admin-shipment-detail .note-wrapper textarea {
+  width: 100%;
+  min-height: 10vh;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  position: relative;
+  padding: 5px;
+  padding: 15px;
+  padding-left: 20px;
+  background-color: rgb(235, 240, 244);
+  border: none;
+  border-radius: 15px;
+  font-size: 14px;
+  font-family: "Poppins", system-ui, Helvetica, Arial, sans-serif;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 17px;
+  margin-top: 0px;
+  border: 1px;
+  font-size: 16px;
+  font-family: "Poppins", system-ui, Helvetica, Arial, sans-serif;
+  border-radius: 15px;
+  background-color: #003fde;
+  color: white;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.admin-shipment-detail .status-dropdown {
+  width: 60%;
+  position: relative;
+  margin-bottom: 10px;
+  margin-top: 5px;
+
+}
+.admin-shipment-detail .status-dropdown * {
+  box-sizing: border-box;
+}
+
+.admin-shipment-detail .status-select {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Space between text and caret */
+  align-items: center; /* Center items vertically */
+  padding: 15px;
+  border: none;
+  border-radius: 15px;
+  background-color: rgb(235, 240, 244);
+  color: rgb(78, 78, 78);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-sizing: border-box;
+  height: 45px;
+
+}
+
+.admin-shipment-detail .status-select span {
+  text-align: left; /* Align text to the left */
+  padding: 0;
+  margin: 0;
+  left: 20px;
+}
+
+.admin-shipment-detail .status-caret {
+  margin-left: auto; /* Push caret to the far right */
+  color: rgb(78, 78, 78);
+  transition: transform 0.3s ease;
+margin-top: 5px;
+}
+
+
+
+.admin-shipment-detail .select-clicked {
+  background-color: rgb(217, 222, 226);
+  color: rgb(78, 78, 78);
+}
+
+
+.admin-shipment-detail .caret-rotate{
+  transform: rotate(360deg);
+
+}
+
+.admin-shipment-detail .status-menu {
+  list-style: none;
+  padding-left: 15px;
+  background-color: rgb(235, 240, 244);
+  border: none;
+  border-radius: 15px;
+  position: absolute;
+  color: rgb(78, 78, 78);
+  top: 48px;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+  opacity: 0;
+  display: none;
+  transition: 0.2s;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+.admin-shipment-detail .status-menu li{
+  padding: 15px;
+  padding-left: 10px;
+  margin: 0px;
+  cursor: pointer;
+}
+
+.admin-shipment-detail .status-menu-open{
+  display: block;
+  opacity: 1;
+}
+
+/* StaffShipmentDetailsPage.css */
+
+/* Editable input field */
+.editable-input-field {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  margin-bottom: 5px;
+}
+
+/* Dropdown container */
+.distribution-dropdown {
+  position: absolute;
+  z-index: 1000;
+  background-color: rgb(235, 240, 244);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  max-height: 150px; /* Set max height for scrollable dropdown */
+  overflow-y: auto; /* Enable scrolling */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  padding: 0;
+  list-style: none;
+  width: 65%;
+}
+
+/* Dropdown items */
+.distribution-dropdown li {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect on dropdown items */
+.distribution-dropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Add scrollbar styles for the dropdown */
+.distribution-dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.distribution-dropdown::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.distribution-dropdown::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+.distribution-dropdown::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

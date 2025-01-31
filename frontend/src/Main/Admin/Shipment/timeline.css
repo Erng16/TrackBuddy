@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+
+}
+
+
+.timeline {
+  position: relative;
+  max-width: 430px;
+  margin: 0px auto;
+}
+
+.left-container {
+  left: 0;
+}
+
+.right-container {
+  left: 50%;
+  text-align: right;
+}
+
+
+.container {
+  padding: 1px 1px;
+  position: relative;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.text-box{
+  padding: 0px 15px;
+  background: #fff;
+  position: relative;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.left-container i {
+  position: absolute;
+  width: 40px;
+  border-radius: 50%;
+  right: -31px;
+  top: 18px;
+  z-index: 10;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.right-container i {
+  left: -9px;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+  top: 25px;
+  font-size: 18px;
+  font-weight: 900;
+  
+}
+
+
+/* Adjust the vertical line to exclude start and end points */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: calc(100% - 60px); /* Reduce the height to avoid the start and end points */
+  background: #d4e8ff;
+  top: 22px; /* Start the line slightly below the first point */
+  left: 50%;
+  margin-left: -2px;
+}
+
+/* Offset the first and last icons from the line */
+.container:first-child .icon-with-border::before {
+  display: none;
+}
+
+.container:last-child .icon-with-border::after {
+  display: none;
+}
+
+
+/* Style for the "Delivered" icon */
+.delivered-icon {
+  color: green; /* Or any color to indicate successful delivery */
+  
+}
+
+
+/* Style for the latest update's icon */
+.latest-icon {
+  color: #8999ac; /* Or any color for the latest status */
+}
+
+/* Style for older updates' icons */
+.older-icon {
+  color: #d4e8ff;
+}
+
+/* Style for the white circle */
+.white-circle {
+  color: white;
+  position: absolute;
+  font-size: 18px; /* Adjust size to match the icon */
+}
+
+/* Style for the green check */
+.green-check {
+  color: green;
+  position: absolute;
+  font-size: 18px; /* Adjust size to sit inside the white circle */
+}
+
+
+.s-status {
+  margin-bottom: -20px;
+  padding-bottom: 0;
+  font-size: 14px;
+}
+
+/* Style for time text under location */
+.time-text {
+  display: block;
+  color: gray; /* Or any color you prefer */
+  font-size: 12px; /* Slightly smaller font size */
+  margin-top: 5px; /* Add some spacing from the location text */
+}
